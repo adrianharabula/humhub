@@ -12,6 +12,6 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) gd zip pdo_mysql exif intl ldap
 
-COPY php-custom.ini $PHP_INI_DIR/conf.d/
+RUN printf "file_uploads = On\nupload_max_filesize = 64M\npost_max_size = 64M\nmax_execution_time = 600\n" > $PHP_INI_DIR/conf.d/php-custom.ini
 
 RUN a2enmod rewrite
