@@ -1,5 +1,4 @@
-# humhub
-HumHub in Docker container
+# HumHub in Docker container [adrianharabula/humhub](https://hub.docker.com/r/adrianharabula/humhub)
 
 Use the following docker-compose.yaml to run HumHub in Docker:
 ```yaml
