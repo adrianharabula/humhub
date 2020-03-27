@@ -2,7 +2,7 @@
 HumHub in Docker container
 
 Use the following docker-compose.yaml to run HumHub in Docker:
-```
+```yaml
 version: '3.1'
 services:
   humhub:
